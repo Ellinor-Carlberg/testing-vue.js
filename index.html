@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div id="root">
+<div></div>
+        <!-- example 1 data binding -->
+  <input type="text" id="input" v-model="message">
+<p>The value of the input is {{ message }}</p>
+
+
+<!--  <button v-bind:title="title">hover over me</button>  -->
+        <!-- <ul>
+            <li v-for="name in names" v-text="name"></li>
+        </ul>
+
+        <input id="input" type="text" v-model="newName">
+        <button v-on:click="addName">Add name</button>
+ -->
+    </div>
+
+    <!-- Vue.js script source -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+
+
+ let data = {
+    message: ''
+};
+
+
+ /* example 1  data binding-vue.js */
+new Vue({
+            el: '#root',
+
+            data:data }) 
+
+/* examle 1 data binding-javascript */
+
+/*
+document.querySelector('#input').value = data.message;
+ */
+
+                /*
+                 title: 'now the title is being set trough JavaScript.'
+                 newName: '',
+                names: ['elli', 'ellen', 'elin', 'john'] 
+            }*/
+
+           /*  methods: {
+                addName: function () {
+                    this.names.push(this.newName)
+                    this.newName = ""
+                }
+ */
+
+            
+
+        
+
+
+        /* message: '',
+             foo: 'dog', */
+
+    </script>
+
+
 </body>
+
 </html>
