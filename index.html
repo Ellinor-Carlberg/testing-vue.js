@@ -16,14 +16,18 @@
 <p>The value of the input is {{ message }}</p>
 
 
+
 <!--  <button v-bind:title="title">hover over me</button>  -->
-        <!-- <ul>
+        
+ <!-- example 3 array -->
+<!--  <input type="text" id="input" v-model> -->
+<ul>
             <li v-for="name in names" v-text="name"></li>
         </ul>
 
-        <input id="input" type="text" v-model="newName">
-        <button v-on:click="addName">Add name</button>
- -->
+  <input id="input" type="text" v-model="newName">
+        <button v-on:click="addName">Add name</button> 
+
     </div>
 
     <!-- Vue.js script source -->
@@ -31,19 +35,28 @@
 
     <script>
 
-
- let data = {
+/* example 1  data binding */
+ /* let data = {
     message: ''
 };
-
+ */
 
  /* example 1  data binding-vue.js */
+/* new Vue({
+            el: '#root',
+
+            data:data })  */
+
+/* examle 1 data binding-javascript */
+
+
 new Vue({
             el: '#root',
 
-            data:data }) 
-
-/* examle 1 data binding-javascript */
+            data:{
+                names: ['elli', 'ellen', 'elin', 'john'] 
+                } 
+                }) 
 
 /*
 document.querySelector('#input').value = data.message;
@@ -63,10 +76,6 @@ document.querySelector('#input').value = data.message;
  */
 
             
-
-        
-
-
         /* message: '',
              foo: 'dog', */
 
@@ -76,3 +85,16 @@ document.querySelector('#input').value = data.message;
 </body>
 
 </html>
+
+
+<!--add name in array. html 
+    <input id="input" type="text">
+    <button id="button">Add name</button>
+JS document.querySelector('#button').addEventlistener('click', () =>{
+let name = document.querySelector('#input').value;
+
+app.names.push(name.value);
+
+*removes name from input *
+name.value = '';
+}) -->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<style type='text/css'>
+
+.color-red { color: red; }
+
+</style>
+
+
+<body>
+    <div id="root">
+<button v-bind:class="className" v-bind:title="title">click me</button> 
+       
+
+    </div>
+
+    <!-- Vue.js script source -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+
+var app = new Vue({
+            el: '#root',
+
+            data: {
+                title: 'now the title is being set trough JavaScript.',
+                className: 'color-red'
+                } 
+                }) 
+/* 
+
+document.querySelector('#input').value = data.message;
+ 
+ */
+  
+                 
+                 
+
+
+           
+
+    </script>
+
+
+</body>
+
+</html>
+
