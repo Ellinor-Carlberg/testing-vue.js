@@ -4,30 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <header>
+        <h1>ALEJANDROS TO-DO APP</h1>
+    </header>
+
     <div id="root">
-<div></div>
-        <!-- example 1 data binding -->
-  <input type="text" id="input" v-model="message">
-<p>The value of the input is {{ message }}</p>
+        <img class="imageAlejandro" src="./media/alejandro.jpg" alt="alejandro">
 
+        <div class="container">
+            <div class="containerToDo">
+                <h2>Att göra idag:</h2>
+                <input type="text">
+                <button>okej</button>
+                
 
+                <div class="containerList">
+                <ul>
+                    <li>por exemplo</li>
+                </ul>
+                <div>
+                    <span></span>
+                </div>
+</div>
 
-<!--  <button v-bind:title="title">hover over me</button>  -->
-        
- <!-- example 3 array -->
-<!--  <input type="text" id="input" v-model> -->
-<ul>
-            <li v-for="name in names" v-text="name"></li>
-        </ul>
+            </div>
 
-  <input id="input" type="text" v-model="newName">
-        <button v-on:click="addName">Add name</button> 
+            <div class="containerPostIt">
+                <button>Post-it Peppin</button>
+                <img class="imagePostIt" src="./media/postIt.png" alt="post-it">
+            </div>
 
+        </div>
+    </div>
     </div>
 
     <!-- Vue.js script source -->
@@ -35,66 +48,13 @@
 
     <script>
 
-/* example 1  data binding */
- /* let data = {
-    message: ''
-};
- */
-
- /* example 1  data binding-vue.js */
-/* new Vue({
-            el: '#root',
-
-            data:data })  */
-
-/* examle 1 data binding-javascript */
-
-
-new Vue({
-            el: '#root',
-
-            data:{
-                names: ['elli', 'ellen', 'elin', 'john'] 
-                } 
-                }) 
-
-/*
-document.querySelector('#input').value = data.message;
- */
-
-                /*
-                 title: 'now the title is being set trough JavaScript.'
-                 newName: '',
-                names: ['elli', 'ellen', 'elin', 'john'] 
-            }*/
-
-           /*  methods: {
-                addName: function () {
-                    this.names.push(this.newName)
-                    this.newName = ""
-                }
- */
-
-            
-        /* message: '',
-             foo: 'dog', */
 
     </script>
+
+
+
 
 
 </body>
 
 </html>
-
-
-<!--add name in array. html 
-    <input id="input" type="text">
-    <button id="button">Add name</button>
-JS document.querySelector('#button').addEventlistener('click', () =>{
-let name = document.querySelector('#input').value;
-
-app.names.push(name.value);
-
-*removes name from input *
-name.value = '';
-}) -->
