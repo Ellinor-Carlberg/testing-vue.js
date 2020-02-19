@@ -17,7 +17,7 @@
 <body>
     <div id="root">
 
-        <button v-bind:class="{ 'is-loading': isLoading }" v-on:click="toggleClass">Toggle Me</button>
+        <button :class="{ 'is-loading': isLoading }" @click="toggleClass">Toggle Me</button>
 
     </div>
 
