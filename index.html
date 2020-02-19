@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alejandros To Do App</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -14,29 +14,31 @@
     </header>
 
     <div id="root">
-        <img class="imageAlejandro" src="./media/alejandro.jpg" alt="alejandro">
+        <img class="imageAlejandro" src="./media/alejandro.jpg" alt="Alejandro">
 
         <div class="container">
+
             <div class="containerToDo">
                 <h2>Att göra idag:</h2>
                 <input type="text">
                 <button>okej</button>
-                
+
 
                 <div class="containerList">
-                <ul>
-                    <li>por exemplo</li>
-                </ul>
-                <div>
-                    <span></span>
+                    <ul>
+                        <li>por exemplo</li>
+                    </ul>
+                    <div>
+                        <span></span>
+                    </div>
                 </div>
-</div>
 
             </div>
 
             <div class="containerPostIt">
-                <button>Post-it Peppin</button>
+                <button v-on:click="writePeppin">Post-it Peppin</button>
                 <img class="imagePostIt" src="./media/postIt.png" alt="post-it">
+                <h2>{{ pepp }}</h2>
             </div>
 
         </div>
@@ -46,14 +48,33 @@
     <!-- Vue.js script source -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
+
+
     <script>
+    
+    
+    var app = new Vue({
 
+            el: '#root',
 
+            data: {
+
+                pepp: '',
+
+            },
+
+            methods: {
+
+                writePeppin() {
+
+                    this.pepp = 'DU ÄR STARK FAKTISK'
+
+                }
+
+            }
+
+        });
     </script>
-
-
-
-
 
 </body>
 

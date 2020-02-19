@@ -52,11 +52,22 @@ width: 100%;
     align-items: center;
     flex-direction: column; 
     flex-wrap: nowrap;
+    position: relative;
 }
+
+.containerPostIt h2 {
+position: absolute;
+left: 3rem;
+line-height: 3rem;
+transform: rotate(-11deg);
+}
+
 
 .imagePostIt {
     width: 20rem;
 }
+
+
 
 .containerList {
     display: flex;
