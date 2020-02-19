@@ -10,7 +10,9 @@
 
 <body>
     <div id="root">
-<h1 v-text="new Date()"></h1>
+<h1>
+{{reversedMessage}}
+</h1>
 
 
 </div>
@@ -24,8 +26,15 @@ var app = new Vue ({
 el: "#root",
 
 data: {
-    message: 'hello world'
+    message: 'hello world'},
+
+computed: {
+    reversedMessage() {
+        return this.message.split('').reverse().join('');
+    }
 }
+
+
 });
 
     </script>
