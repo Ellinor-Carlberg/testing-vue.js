@@ -16,7 +16,9 @@
 
     <div id="root">
         <img class="imageAlejandro" src="./media/alejandro.jpg" alt="Alejandro">
-
+        <input type="text" id="input" v-model="ownPeppin" placeholder="Skriv din egna peppin">
+        <h1>{{ ownPeppin }}</h1>
+<img src="./media/postIt2.jpg">
         <div class="container">
 
             <div class="containerToDo">
@@ -27,7 +29,7 @@
 
                 <div class="containerList">
                     <ul>
-                        <li v-for="ToDo in ToDos" v-text="ToDo"></li>
+                        <li v-for="ToDo in ToDos" v-text="ToDo"></li><input type="checkbox">
                     </ul>
                     <div>
                         <span></span>
@@ -52,14 +54,16 @@
 
 
     <script>
-    
+
+
+
     
     var app = new Vue({
 
             el: '#root',
 
             data: {
-
+                ownPeppin: '',
                 peppin: ['DU ÄR STARK FAKTISK', 'DU KLARAR AV DET SÄKERT', 'VARJE DAG ÄR INGA PROBLEM', 'DU KLARAR ALLA PROBLEM', 'LIVET ÄR INGA PROBLEM'],
                 chosenPeppin: '',
                 newToDo: '',
