@@ -16,11 +16,13 @@
 
     <div id="root">
         <img class="imageAlejandro" src="./media/alejandro.jpg" alt="Alejandro">
-        <input type="text" id="input" v-model="ownPeppin" placeholder="Skriv din egna peppin">
-        <h1>{{ ownPeppin }}</h1>
-<img class="imagePostIt" src="./media/P4.png">
+        
         <div class="container">
-
+            <div class="containerPostItOwn">
+            <input type="text" id="input" v-model="ownPeppin" placeholder="Skriv din egna peppin">
+            <h1>{{ ownPeppin }}</h1>
+    <img class="imagePostIt" src="./media/P4.png">
+</div>
             <div class="containerToDo">
                 <h2>Att göra idag:</h2>
                 <input id="input" type="text" v-model="newToDo">
@@ -38,7 +40,7 @@
 
             </div>
 
-            <div class="containerPostIt">
+            <div class="containerPostItPeppin">
                 <button v-on:click="displayRandomPeppin">Post-it Peppin</button>
                 <img class="imagePostIt" src="./media/postIt.png" alt="post-it">
                 <h1>{{ chosenPeppin }}</h1>

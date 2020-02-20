@@ -46,7 +46,8 @@ width: 100%;
     }
 
 
-.containerPostIt {
+
+.containerPostItOwn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +56,28 @@ width: 100%;
     position: relative;
 }
 
-.containerPostIt h1 {
+.containerPostItOwn h1 {
+position: absolute;
+left: 3rem;
+top: 5rem;
+line-height: 3rem;
+transform: rotate(-11deg);
+width: 50%;
+text-align: center;
+font-family: 'Schoolbell', cursive;
+color: blue;
+}
+
+.containerPostItPeppin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.containerPostItPeppin h1 {
 position: absolute;
 left: 3rem;
 top: 5rem;
