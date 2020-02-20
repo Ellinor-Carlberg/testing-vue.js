@@ -8,21 +8,29 @@
 header {
     position: fixed;
     top: 0;
-    height: 5rem;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color:  azure;
-    color: rgb(255, 85, 113);
+    background-image: url(./media/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg);
+    color: black;
 }
+
+header h1 {
+    font-family: 'Schoolbell', cursive;
+    font-size: 4rem;
+}
+
 body {
-    background-color: azure;
+    background-image: url(./media/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg);
+    background-repeat: no-repeat;
     height: 100vh;
+    /* background-size: cover;  */
 }
 
 #root {
-border: 1px solid black;
+/* border: 1px solid black; */
 margin: 5rem 10% 5% 10%;
 display: flex;
 justify-content: center;
@@ -37,12 +45,14 @@ width: 100%;
 
 
 .container {
-    border: 1px solid blue; 
+    /* border: 1px solid blue;  */
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     width: 100%; 
+    margin: 7rem 0 8rem 0;
+    flex-wrap: wrap;
     }
 
 
@@ -65,14 +75,16 @@ transform: rotate(-4deg);
 width: 50%;
 text-align: center;
 font-family: 'Schoolbell', cursive;
-color: blue;
+text-transform: uppercase;
+color:  rgba(0, 0, 0, 0.838);
 }
+
 
 li {
     font-family: 'Schoolbell', cursive;
     line-height: 3rem;
     font-size: 2rem;
-    color: blue;  
+    color: rgb(0, 21, 255);  
 }
 
 .containerPostItPeppin {
@@ -86,8 +98,8 @@ li {
 
 .containerPostItPeppin h1 {
 position: absolute;
-left: 3rem;
-top: 5rem;
+left: 3.5rem;
+top: 4.5rem;
 line-height: 3rem;
 transform: rotate(-11deg);
 width: 50%;
@@ -105,16 +117,32 @@ color: rgb(196, 3, 3);
     position: relative;
 }
 
+input, button{
+    padding: .1rem;
+    font-size: .9rem;
+}
+
+button {
+    background-color:azure;
+    border: none;
+    text-transform: uppercase;
+
+}
+
+
+.containerToDo input {
+    margin: 0 0 0 7rem;
+}
 .containerList {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column; 
     flex-wrap: nowrap;
     margin: 1rem;
     position: absolute;
     top: 5rem;
-    left: 2rem;
+    left: 3rem;
 }
 
 
