@@ -55,11 +55,16 @@ width: 100%;
     position: relative;
 }
 
-.containerPostIt h2 {
+.containerPostIt h1 {
 position: absolute;
 left: 3rem;
+top: 5rem;
 line-height: 3rem;
 transform: rotate(-11deg);
+width: 50%;
+text-align: center;
+font-family: 'Schoolbell', cursive;
+color: rgb(196, 3, 3);
 }
 
 

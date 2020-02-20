@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandros To Do App</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,13 +21,13 @@
 
             <div class="containerToDo">
                 <h2>Att göra idag:</h2>
-                <input type="text">
-                <button>okej</button>
+                <input id="input" type="text" v-model="newToDo">
+                <button v-on:click="addToDo">okej</button>
 
 
                 <div class="containerList">
                     <ul>
-                        <li>por exemplo</li>
+                        <li v-for="ToDo in ToDos" v-text="ToDo"></li>
                     </ul>
                     <div>
                         <span></span>
@@ -36,9 +37,9 @@
             </div>
 
             <div class="containerPostIt">
-                <button v-on:click="writePeppin">Post-it Peppin</button>
+                <button v-on:click="displayRandomPeppin">Post-it Peppin</button>
                 <img class="imagePostIt" src="./media/postIt.png" alt="post-it">
-                <h2>{{ pepp }}</h2>
+                <h1>{{ chosenPeppin }}</h1>
             </div>
 
         </div>
@@ -59,17 +60,23 @@
 
             data: {
 
-                pepp: '',
-
+                peppin: ['DU ÄR STARK FAKTISK', 'DU KLARAR AV DET SÄKERT', 'VARJE DAG ÄR INGA PROBLEM', 'DU KLARAR ALLA PROBLEM', 'LIVET ÄR INGA PROBLEM'],
+                chosenPeppin: '',
+                newToDo: '',
+                ToDos: ['por exemplo']
             },
 
             methods: {
 
-                writePeppin() {
-
-                    this.pepp = 'DU ÄR STARK FAKTISK'
-
-                }
+                displayRandomPeppin() {
+                    var chosenNumber = Math.floor(Math.random() * this.peppin.length);
+                    this.chosenPeppin = this.peppin[chosenNumber]
+                    
+                },
+                addToDo() {
+this.ToDos.push(this.newToDo);
+   this.newToDo = ''
+    }
 
             }
 
