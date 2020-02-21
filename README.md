@@ -1,9 +1,11 @@
 # testing-vue.js
-Testing Vue.js for the first time.
+This project is for learning the framework Vue.js.
+The final files for my project are in the map "Vue project". This is the files you should look at. It is only the index.html file that have Vue.js coding.
 
-Kod
-Sätta upp ett ”proof of concept” projekt som använder sig av ramverket och presenterar det. Inlämning skall innehålla kodexempel från erat egna projekt.
+The map "Files for learning" only have old files where I was trying out diffrent coding project with Vue.js.
 
+
+#Guide for installing Vue.js
 
 The easiest way to try out Vue.js is with a script tag. The script tag I choose is for prototyping or learning purposes. (You can also go to: 
 https://vuejs.org/v2/guide/installation.html and get more info or if you want to include Vue in your project in some other way.)
