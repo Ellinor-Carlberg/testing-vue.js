@@ -13,25 +13,25 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url(./media/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg);
+    background-color: azure;
     color: black;
+    z-index: 1;
 }
 
 header h1 {
-    font-family: 'Schoolbell', cursive;
-    font-size: 4rem;
+font-family: 'Pacifico', cursive; 
+font-size: 3rem;
+color: rgb(0, 0, 113);
 }
 
 body {
-    background-image: url(./media/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg);
-    background-repeat: no-repeat;
+    background-color: azure;
     height: 100vh;
-    /* background-size: cover;  */
+    
 }
 
 #root {
-/* border: 1px solid black; */
-margin: 5rem 10% 5% 10%;
+margin: 7rem 10% 5% 10%;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -41,18 +41,19 @@ flex-direction: column;
 .imageAlejandro {
 display:block;
 width: 100%;
+border: .5rem solid goldenrod;
+border-radius: .5rem;
 } 
 
 
 .container {
-    /* border: 1px solid blue;  */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%; 
-    margin: 7rem 0 8rem 0;
     flex-wrap: wrap;
+    padding: 2rem 0 2rem 0;
     }
 
 
@@ -64,27 +65,30 @@ width: 100%;
     flex-direction: column; 
     flex-wrap: nowrap;
     position: relative;
+    padding: 5rem 0 5rem 0;
+    word-wrap: break-word;
 }
 
 .containerPostItOwn h1 {
 position: absolute;
 left: 3rem;
-top: 5rem;
+top: 10rem;
 line-height: 3rem;
 transform: rotate(-4deg);
-width: 50%;
 text-align: center;
+width: 60%;
 font-family: 'Schoolbell', cursive;
 text-transform: uppercase;
 color:  rgba(0, 0, 0, 0.838);
 }
 
 
+
 li {
     font-family: 'Schoolbell', cursive;
     line-height: 3rem;
     font-size: 2rem;
-    color: rgb(0, 21, 255);  
+    color: rgb(0, 0, 113);  
 }
 
 .containerPostItPeppin {
@@ -94,12 +98,13 @@ li {
     flex-direction: column; 
     flex-wrap: nowrap;
     position: relative;
+    padding: 5rem 0 6rem 0;
 }
 
 .containerPostItPeppin h1 {
 position: absolute;
 left: 3.5rem;
-top: 4.5rem;
+top: 11rem;
 line-height: 3rem;
 transform: rotate(-11deg);
 width: 50%;
@@ -115,23 +120,26 @@ color: rgb(196, 3, 3);
 
 .containerToDo {
     position: relative;
+    padding: 5rem 0 5rem 0;
 }
 
 input, button{
-    padding: .1rem;
+    padding: .3rem;
     font-size: .9rem;
+    margin: 0 0 .5rem 0;
+    border-radius: .5rem;
 }
 
 button {
-    background-color:azure;
-    border: none;
+    background-color: gold;
+    border: .2rem solid goldenrod;
     text-transform: uppercase;
 
 }
 
 
 .containerToDo input {
-    margin: 0 0 0 7rem;
+    margin: 0 0 0 4rem;
 }
 .containerList {
     display: flex;
@@ -141,22 +149,9 @@ button {
     flex-wrap: nowrap;
     margin: 1rem;
     position: absolute;
-    top: 5rem;
-    left: 3rem;
+    top: 10rem;
+    left: 4rem;
 }
-
-
-
-
-span {
-height: 1rem;
-  width: 1rem;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin: .1rem 0 0 1rem;
-}
-
 
 
 

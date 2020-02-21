@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandros To Do App</title>
     <link rel="stylesheet" href="./stylecopy.css">
-    <link href="https://fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Schoolbell&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
     <header>
-        <h1>ALEJANDROS TO-DO APP</h1>
+        <h1>Alejandros to-do app</h1>
     </header>
     <div id="root">
         <img class="imageAlejandro" src="./media/alejandro.jpg" alt="Alejandro">
@@ -19,7 +20,7 @@
         <div class="container">
 
             <div class="containerPostItOwn">
-                <input type="text" id="input" v-model="ownPeppin" placeholder="Skriv din egna peppin">
+                <input type="text" id="input" v-model="ownPeppin" placeholder="Skriv din egna peppin"  maxlength="48">
                 <img class="imagePostIt" src="./media/P6.png">
                 <h1>{{ ownPeppin }}</h1>
             </div>
