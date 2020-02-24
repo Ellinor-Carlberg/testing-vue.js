@@ -25,4 +25,4 @@ Link to Github repot:
 https://github.com/Ellinor-Carlberg/testing-vue.js
 
 Demo link (from Github pages):
-https://ellinor-carlberg.github.io/testing-vue.js/
+https://ellinor-carlberg.github.io/testing-vue.js/.
