@@ -20,3 +20,9 @@ You can put this script tag in your html.file inside the body tag. Then you writ
 Also if you want you can download the Vue Devtools extension:
 https://github.com/vuejs/vue-devtools
 (There is also a installation guide for the extension.)
+
+Link to Github repot:
+https://github.com/Ellinor-Carlberg/testing-vue.js
+
+Demo link (from Github pages):
+https://ellinor-carlberg.github.io/my-portfolio/
